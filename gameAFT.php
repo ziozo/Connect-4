@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php
-session_start();
-?>
+    <?php
+    session_start();
+    ?>
     <style>
 
           
@@ -467,7 +467,7 @@ var ConnectFour = function() {
                     type: 'POST',
                     data: { has_won: true },    
                     complete: function (res) {
-                        alert("<?php echo $guest ?>"+ "wins!");
+                        alert("<?php echo $guest ?>"+ " wins!");
                     },
                     error: function () {
                         alert("something went wrong");
@@ -479,7 +479,7 @@ var ConnectFour = function() {
                     type: 'POST',
                     data: { has_won: false },
                     complete: function (res) {
-                        alert("<?php echo $guest ?>"+ "wins!");
+                        alert("<?php echo $guest ?>"+ " wins!");
                     },
                     error: function () {
                         alert("something went wrong");
